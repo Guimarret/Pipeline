@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM public.ecr.aws/lambda/python:latest
 
 COPY app.py ${LAMBDA_TASK_ROOT}
 COPY requirements.txt .
