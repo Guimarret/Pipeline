@@ -1,0 +1,19 @@
+{
+    "Statement": [
+        {
+            "Action": [
+                "logs:*"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Action": [
+                "s3:*"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::medallion_model_workflow/*"
+        }
+    ],
+    "Version": "2012-10-17"
+}
